@@ -1,0 +1,176 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Toggle sidebar and move focus
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!sidebarFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.focusSideBar",
+    "when": "sidebarFocus"
+  },
+
+  // Navigate between tabs
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousEditor"
+  },
+
+  // Save and quit
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+
+  // Search
+  {
+    "key": "ctrl+f",
+    "command": "actions.find"
+  },
+
+  // Undo and Redo
+  {
+    "key": "ctrl+z",
+    "command": "undo"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "redo"
+  },
+
+  // Copy, Cut, and Paste
+  {
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "editor.action.clipboardPasteAction"
+  },
+
+  // Scroll up and down in the sidebar
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+
+  // Focus on file explorer && explorer task
+  {
+    "key": "ctrl+0",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+
+  {
+    "key": "m m" /** Creating a new directory */,
+    "command": "workbench.files.action.createFolderFromExplorer",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "a" /** Creating a new file */,
+    "command": "workbench.files.action.createFileFromExplorer",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d" /** deleting a new file/direcotry */,
+    "command": "deleteFile",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r" /** renaming a new file/direcotry */,
+    "command": "renameFile",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "y" /** copy a file/direcotry from file explorer */,
+    "command": "filesExplorer.copy",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "p" /** Paste a file/direcotry from file explorer */,
+    "command": "filesExplorer.paste",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "x" /** Cut a file/direcotry from file explorer */,
+    "command": "filesExplorer.cut",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "u" /** Cancel copy/cut a file/direcotry from file explorer */,
+    "command": "filesExplorer.cancelCut",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+
+  // focus editor to terminal & terminal to again editor
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus && editorTextFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  // Terminal resizing shortcuts
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Create a new terminal when focusing on the terminal
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Split the terminal when focusing on it
+  {
+    "key": "ctrl+/",
+    "command": "workbench.action.terminal.split",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Kill the terminal when focusing on it
+  {
+    "key": "ctrl+backspace",
+    "command": "workbench.action.terminal.kill",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Focus on the next terminal
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Focus on the previous terminal
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "!editorTextFocus && terminalFocus"
+  }
+]
