@@ -71,5 +71,9 @@
   "window.menuBarVisibility": "compact",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "window.customTitleBarVisibility": "windowed"
+  "window.customTitleBarVisibility": "windowed",
+  "vscode-edge-devtools.webhint": false,
+  "files.autoSave": "afterDelay",
+  "editor.cursorBlinking": "expand",
+  "workbench.settings.applyToAllProfiles": ["editor.cursorBlinking"]
 }
